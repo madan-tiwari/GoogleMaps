@@ -45,10 +45,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         List<LatitudeLongitude> latLngs = new ArrayList<>();
-        latLngs.add(new LatitudeLongitude(27.7052354, 85.3294158, "Softwarica College"));
+        latLngs.add(new LatitudeLongitude(27.706195,85.3300396,"Softwarica College"));
         latLngs.add(new LatitudeLongitude(27.70842,85.3293997, "Gopal Daiko Chatamari"));
 
         CameraUpdate center, zoom;
+
         for (int i =0; i < latLngs.size(); i++) {
 
             center= CameraUpdateFactory.newLatLng(new LatLng(latLngs.get(i).getLat(),
